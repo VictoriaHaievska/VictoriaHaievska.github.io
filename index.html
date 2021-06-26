@@ -12,7 +12,7 @@
   </head>
 
           <header class="header">
-            <div class="container">
+            <div class="container_main">
               <div class = "header_inner">
                 <div class="header_logo">Cat Therapy</div>
                 <nav class = "nav">
@@ -29,12 +29,12 @@
 
 <!--The top main slider -->
     <div class="intro">
-      <div class="container">
+      <div class="container_main">
 
         <div class="intro_inner">
           <h1 class= "intro_title">Welcome to Cat Therapy</h1>
           <h2 class = "intro_abajo">Stay calm</h2>
-          <a class = "btn" href="#">Saber Más</a>
+          <a class = "btn" href="#contactar">Saber Más</a>
         </div>
         </div>
     </div>
@@ -79,7 +79,7 @@
       <div id="servicio">
         <div class="container">
           <div class="section_header">
-            <h3 class= "section_subtitle">Conoce nos mejor</h3>
+            <h3 class= "section_subtitle">Conocenos mejor</h3>
             <h2 class= "section_title">Nuestros ayudantes</h2>
             <div class = "section_table">
 
@@ -141,7 +141,7 @@
         <div id="blog">
           <div class="container">
             <div class="section_header">
-              <h3 class= "section_subtitle">Prueba lo ahora</h3>
+              <h3 class= "section_subtitle">Pruebalo ahora</h3>
               <h2 class= "section_title">Mirar los gatos ayuda relajarse</h2>
             </div>
             <div class="video_content">
@@ -168,15 +168,137 @@
             <div class="container">
               <div class="section_header">
                 <h3 class= "section_subtitle">Escoge tu gato favorito</h3>
-                <h2 class= "section_title">Contacta nos para conocer tu nuevo amigo</h2>
+                <h2 class= "section_title">Contactanos para conocer tu nuevo amigo</h2>
+              </div>
+
+    <div class="container">
+      <form form class="formulario_contactar" action="index.html" method="get">
+
+          <div class="fila_radio">
+            <div class="columna_1">
+              <label for="gato_avorito">Que gato te gusta mas?</label>
+            </div>
+
+            <div class="columna_2">
+              <div class="formulario_cont_campo">
+                <input type="radio" name="gato_favorito" id="mikey" value="HTML">
+                <label for="mikey">Mikey</label>
+              </div>
+
+              <div class="formulario_cont_campo">
+                <input type="radio" name="gato_favorito" id="choco" value="Choco">
+                <label for="choco">Choco</label>
+              </div>
+
+              <div class="formulario_cont_campo">
+                <input type="radio" name="gato_favorito" id="chester" value="Chester">
+                <label for="chester">Chester</label>
               </div>
             </div>
-          </div>
-        </div>
-    <!--Contact form -->
+            </div>
 
+          </div>
+
+          <div class="fila">
+                <div class="columna_1">
+                  <label for="fname">Nombre</label>
+                </div>
+              <div class="columna_2">
+                <input type="text" id="fname" name="nombre" placeholder="Como te llamas" required>
+              </div>
+          </div>
+
+          <div class="fila">
+              <div class="columna_1">
+                <label for="lname">Apellidos</label>
+              </div>
+              <div class="columna_2">
+                <input type="text" id="lname" name="lastname" placeholder="Tus apellidos">
+              </div>
+          </div>
+
+          <div class="fila">
+              <div class="columna_1">
+                <label for="movil">Tu numero</label>
+              </div>
+              <div class="columna_2">
+                <input type="text" id="movil" name="movil" placeholder="XXX XXX XXX" required>
+              </div>
+          </div>
+
+          <div class="fila">
+              <div class="columna_1">
+                <label for="email">Tu email</label>
+              </div>
+              <div class="columna_2">
+                <input type="text" id="email" name="email" placeholder="email@gmail.com" required>
+              </div>
+          </div>
+
+
+          <div class="fila">
+            <div class="columna_1">
+              <label for="provincia">Provincia</label>
+            </div>
+            <div class="columna_2">
+              <select id="provincia" name="provincia">
+                <option value="barcelona">Barcelona</option>
+                <option value="madrid">Madrid</option>
+                <option value="zaragoza">Zaragoza</option>
+                <option value="valencia">Valencia</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="fila">
+            <div class="columna_1">
+              <label for="mensaje">Mensaje</label>
+            </div>
+            <div class="columna_2">
+              <textarea id="mensaje" name="mensaje" placeholder="Deja nos tu mensaje" style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="fila" id="submit_button">
+            <input class= "btn" type="submit" value="Quiero saber más">
+    </div>
+  </form>
+</div>
+    <!-- Contact Form -->
   </body>
 
   <footer>
+
+      <div class="footer">
+        <div class="footer_container">
+        <div class="footer_logo">Cat Therapy</div>
+
+        </div>
+
+        <div class="footer_container">
+          <h4>Encuentra nos</h4>
+          <ul>
+            <li><a href="https://goo.gl/maps/AwCmPHsCsdoNTGqr5" target="_blank">Barcelona</a></li>
+            <li><a href="https://goo.gl/maps/AwCmPHsCsdoNTGqr5" target="_blank">Girona</a></li>
+            <li><a href="https://goo.gl/maps/AwCmPHsCsdoNTGqr5" target="_blank">Zaragosa</a></li>
+            <li><a href="https://goo.gl/maps/AwCmPHsCsdoNTGqr5" target="_blank">Tarragona</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_container">
+          <h4>Sigue nos en los redes sociales</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/"target="_blank">Instagram</a></li>
+            <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+            <li><a href="https://twitter.com/?lang=en" target="_blank">Twitter</a></li>
+            <li><a href="https://discord.com/" target="_blank">Discord</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_container">
+          <p><b>Copyright&#169;2021</b></p>
+        </div>
+
+      </div>
+
   </footer>
 </html>
